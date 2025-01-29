@@ -50,12 +50,11 @@ let alpha = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
 
 //Create a chessboard that looks like this using inner loops (more than one combination) This is a chessboard location matrix.
 //You need to use an array ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'] For everything else you should use loops
-//let asciiNumA = 65
-//let asciiNumH = asciiNumA + 7
-//for(let i = 8; i >= 1; i--) {
-//	let s = ''
-//	for(let j = asciiNumA; j <= asciiNumH; j++) {
-//		s += String.fromCharCode(j) + i +  ' '
-//	}
-//	console.log(s)
-//}
+let arr =  ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'] 
+for(let i = 8; i >= 1; i--) {
+	let s = ''
+	for(let j = 0; j < arr.length; j++) {
+		s += arr[j] + i +  ' '
+	}
+	console.log(s)
+}
